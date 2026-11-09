@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.co.zephyr.home">
+	<select id = "getTest" parameterType="java.util.HashMap" resultType="kr.co.zephyr.vo.BlogVo">
+		select  
+		`UUID`,
+		`IMG_URL`,
+		`TITLE`,
+		`CONTENTS`,
+		`DELETE_YN`,
+		`UPDATE_USER`,
+		`UPDATE_DATE`,
+		`CREATE_USER`,
+		`CREATE_DATE`
+		from blog
+	</select>
+</mapper>	
