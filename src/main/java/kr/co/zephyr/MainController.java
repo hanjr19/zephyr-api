@@ -9,6 +9,7 @@ public class MainController {
 	@GetMapping("/")
 	public String home() {
 		System.out.println("메인컨트롤러");
+		System.out.println("메인컨트롤러 깃용");
 		
 		return "Hello~!";
 	}	
