@@ -5,15 +5,15 @@
 <mapper namespace="kr.co.zephyr.home">
 	<select id = "getTest" parameterType="java.util.HashMap" resultType="kr.co.zephyr.vo.BlogVo">
 		select  
-		`UUID`,
-		`IMG_URL`,
-		`TITLE`,
-		`CONTENTS`,
-		`DELETE_YN`,
-		`UPDATE_USER`,
-		`UPDATE_DATE`,
-		`CREATE_USER`,
-		`CREATE_DATE`
+		`UUID`          as uuid, 
+		`IMG_URL`       as imgUrl,
+		`TITLE`         as title,
+		`CONTENTS`      as contents,
+		`DELETE_YN`     as deleteYn,
+		`UPDATE_USER`   as updateUser,
+		`UPDATE_DATE`   as updateDate,
+		`CREATE_USER`   as createUser,
+		`CREATE_DATE`   as createDate
 		from blog
 	</select>
 </mapper>	

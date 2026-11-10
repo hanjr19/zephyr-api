@@ -17,7 +17,7 @@ public class HomeController {
 	@Autowired
 	public HomeService homeService;
 	
-	@GetMapping("/home/test")
+	@GetMapping("/api/test")
 	public List<BlogVo> getTest() {
 		System.out.println("getTest");
 		
@@ -41,8 +41,6 @@ public class HomeController {
 		 * 
 		 * listBlog.add(blogVo);
 		 */
-		
-		
 		
 		return listBlog;
 	}
